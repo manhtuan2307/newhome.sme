@@ -282,24 +282,23 @@
 /** nav popup **/
     .popup-shadow{-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);}
     .nav-popup{position: absolute; background-color: #fff; min-width: 200px; left: 98%; top: 80%; z-index: 10; display: none;}    
-    .inner-nav-popup{position: relative; padding-bottom: 10px;}
+    .inner-nav-popup{position: relative;}
     .nav-popup-heading{background-color: #3A9EDF; padding: 10px 15px;}
     .nav-popup-title{margin: 0px; text-transform: none; font-size: 0.8rem; color: #fff; font-weight: 500;}
-    .nav-popup-body{padding: 0px 15px;}
+    .nav-popup-body{padding: 0; margin: 0;}
     .nav-popup-list{margin: 0; padding: 0;}
-    .nav-popup-list li{border-bottom: 1px dotted #333;}
-    .nav-popup-list li:last-child{border-bottom: none;}
-    .nav-popup-list li a{display: block; padding: 5px 0; font-size: 0.8rem; text-decoration: none; color: #333;}    
-    .nav-popup-list li:hover a{color: #3A9EDF; font-weight: 600;}
+    .nav-popup-list li{padding: 0 15px;}    
+    .nav-popup-list li a{display: block; padding: 8px 0; font-size: 0.8rem; text-decoration: none; color: #333; border-bottom: 1px dotted #333;}    
+    .nav-popup-list li:last-child a{border-bottom: none;}
+    .nav-popup-list li:hover{background-color: #3A9EDF;}
+    .nav-popup-list li:hover a{color: #FFF;}
     .ibox-item:nth-child(4n) .nav-popup{right: 98%; left: auto;}
 @media only screen and (max-width: 736px){
     .nav-popup{top: 0;}
     .ibox-item:nth-child(2n) .nav-popup{right: 98%; left: auto; top: 0;}
 }
-    .nav-popup.show{display: block;}
-    .ibox-item:hover .nav-popup{display: block;}
-
-
+    .ibox-item.show .itemIntro .nav-popup{display: block;}
+    .ibox-item:hover .itemIntro .nav-popup{display: block;}
 
 /** end nav popup **/
     .bg-purple-color{background-color: rgba(92,58,128,.2);} .btn-purple{background-color: rgba(92,58,128,1); border: 1px solid rgba(92,58,128,1); color: #fff;} .text-purple{color: rgba(92,58,128,1);}
@@ -394,7 +393,8 @@
     .itemField .itemFieldInfo{width: 70%; padding: 15px 5px 15px 10px; color: #fff;}
 }
     .popup-field{position: absolute; background-color: #fff; right: -15px; top: 50%; min-width: 200px; z-index: 10; display: none;}
-    .itemField:hover .popup-field{display: block;}
+    .item-Fp:hover .itemField .popup-field{display: block;}
+    .item-Fp.show .itemField .popup-field{display: block;}
 
     .background-grey-color{background-color: #E8F2FB !important;}
     .itemNews{margin: 0 15px 15px;}

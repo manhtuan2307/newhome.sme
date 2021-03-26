@@ -24,7 +24,13 @@ var app = {
   showpopupfunc: function() {
     $(".boxfunc").click(function() {
       $(this).toggleClass("show");
-    });    
+    });
+    $('.ibox-item').click(function(){
+        $(this).toggleClass('show').siblings().removeClass('show');
+    });   
+    $('.item-Fp').click(function(){        
+        $(this).toggleClass('show').siblings().removeClass('show');
+    }); 
   },
   showSupport: function() {
      $('.show-arrow').click(function(){
